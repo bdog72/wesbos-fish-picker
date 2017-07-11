@@ -1,11 +1,20 @@
 import React, { Component } from 'react'
-
-class App extends Component {
+// import StorePicker from './StorePicker'
+import Header from './Header'
+import Inventory from './Inventory'
+import Order from './Order'
+export default class App extends Component {
   render () {
-    return <div>
-      <h1>Hello, World!</h1>
-    </div>
+    return (
+      <div className='catch-of-the-day'>
+        <div className='menu'>
+          <Header />
+        </div>
+        <Order />
+        <Inventory />
+      </div>
+    )
   }
 }
 
-export default App
+/* <StorePicker /> */
