@@ -1,35 +1,35 @@
-import React from 'react';
-import Header from './Header';
-import Order from './Order';
-import Inventory from './Inventory';
+import React from 'react'
+import Header from './Header'
+import Order from './Order'
+import Inventory from './Inventory'
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor () {
+    super()
 
-    this.addFish = this.addFish.bind(this);
+    this.addFish = this.addFish.bind(this)
     // getinitialState
     this.state = {
       fishes: {},
       order: {}
-    };
+    }
   }
 
-  addFish(fish) {
+  addFish (fish) {
     // update our state
-    const fishes = {...this.state.fishes};
+    const fishes = {...this.state.fishes}
     // add in our new fish
-    const timestamp = Date.now();
-    fishes[`fish-${timestamp}`] = fish;
+    const timestamp = Date.now()
+    fishes[`fish-${timestamp}`] = fish
     // set state
-    this.setState({ fishes });
+    this.setState({ fishes })
   }
 
-  render() {
+  render () {
     return (
-      <div className="catch-of-the-day">
-        <div className="menu">
-          <Header tagline="Fresh Seafood Market" />
+      <div className='catch-of-the-day'>
+        <div className='menu'>
+          <Header tagline='Fresh Seafood Market' />
         </div>
         <Order />
         <Inventory addFish={this.addFish} />
@@ -38,4 +38,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default App

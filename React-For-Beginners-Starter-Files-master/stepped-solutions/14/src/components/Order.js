@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 class Order extends React.Component {
-  render() {
+  render () {
     return (
       <p>Order</p>
     )
   }
 }
 
-export default Order;
+export default Order

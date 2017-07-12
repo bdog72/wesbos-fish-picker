@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 class NotFound extends React.Component {
-  render() {
+  render () {
     return (
       <h2>Not Found!111!!</h2>
     )
   }
 }
 
-export default NotFound;
+export default NotFound
