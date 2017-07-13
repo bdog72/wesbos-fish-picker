@@ -400,7 +400,7 @@ header.top h3::after {
   background: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   overflow: scroll;
 }
 
@@ -423,16 +423,18 @@ header.top h3::after {
 
 .catch-of-the-day > *:last-child {
   -ms-flex-negative: 1;
-      flex-shrink: 1;
+  flex-shrink: 1;
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
   -webkit-transform: translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08) translateX(24px);
-          transform: translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08) translateX(24px);
+  transform: translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08) translateX(24px);
 }
+
 input#fold:not(:checked) ~ #main .catch-of-the-day > * {
   -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
+
 label[for="fold"] {
   position: absolute;
   top: 1rem;
@@ -445,18 +447,22 @@ label[for="fold"] {
   cursor: pointer;
   padding: 0.5rem 1rem;
 }
+
 input#fold {
   display: none;
 }
+
 input#fold:checked + label {
   background: #fff;
   color: #000;
 }
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 ul.order li {
   border-bottom: 1px solid #000;
   padding: 2rem 0;
@@ -465,44 +471,53 @@ ul.order li {
   display: flex;
   font-size: 1.4rem;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 ul.order li:hover button {
   display: inline;
 }
+
 ul.order li button {
   border: 0;
   display: none;
   line-height: 1;
   padding: 0;
 }
+
 ul.order li.total {
   font-weight: 600;
   border-bottom: 3px solid #000;
   border-top: 3px double #000;
 }
+
 ul.order li.unavailable {
   text-decoration: line-through;
   background: #f8d0d2;
 }
+
 ul.order li .price {
   font-size: 1.2rem;
 }
+
 ul.order li span.count {
   position: relative;
   overflow: hidden;
   float: left;
 }
+
 ul.order li span.count span {
   display: inline-block;
 }
+
 .order-title {
   text-align: center;
 }
+
 .fish-edit {
   margin-bottom: 20px;
   border: 2px solid #000;
@@ -511,8 +526,9 @@ ul.order li span.count span {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
+
 .fish-edit input,
 .fish-edit textarea,
 .fish-edit select {
@@ -524,23 +540,27 @@ ul.order li span.count span {
   border-bottom: 1px solid #000;
   border-right: 1px solid #000;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 0;
   background: #fff;
 }
+
 .fish-edit input:focus,
 .fish-edit textarea:focus,
 .fish-edit select:focus {
   outline: 0;
   background: #fef2de;
 }
+
 .fish-edit textarea {
   width: 100%;
 }
+
 .fish-edit input:last-of-type {
   width: 100%;
 }
+
 .fish-edit button {
   width: 100%;
   border: 0;
