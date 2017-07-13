@@ -22,6 +22,8 @@ export default class App extends Component {
     this.setState({ fishes })
   }
 
+  // I can name sampleFishes anything
+
   loadSamples () {
     this.setState({
       fishes: sampleFishes

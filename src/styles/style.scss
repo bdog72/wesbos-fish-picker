@@ -309,7 +309,8 @@ header.top {
 }
 
 header.top h1 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
   line-height: 0.7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,19 +406,21 @@ header.top h3::after {
 
 .catch-of-the-day > *:first-child {
   -ms-flex-negative: 1;
-      flex-shrink: 1;
+  flex-shrink: 1;
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
   -webkit-transform: translateX(50%) rotateY(6deg) translateX(-50%);
-          transform: translateX(50%) rotateY(6deg) translateX(-50%);
+  transform: translateX(50%) rotateY(6deg) translateX(-50%);
 }
+
 .catch-of-the-day > *:nth-child(2) {
   -webkit-transform: translateX(-50%) rotateY(-14deg) translateX(50%);
-          transform: translateX(-50%) rotateY(-14deg) translateX(50%);
+  transform: translateX(-50%) rotateY(-14deg) translateX(50%);
   border-left: 0;
   border-right: 0;
   min-width: 300px;
 }
+
 .catch-of-the-day > *:last-child {
   -ms-flex-negative: 1;
       flex-shrink: 1;
@@ -542,14 +545,16 @@ ul.order li span.count span {
   width: 100%;
   border: 0;
 }
+
 .list-of-fish {
   border-top: 2px solid #000;
   border-bottom: 1px solid #000;
   padding-top: 5px;
   margin-top: 2rem;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
+
 .menu-fish {
   border-bottom: 2px solid #000;
   border-top: 1px solid #000;
@@ -559,33 +564,38 @@ ul.order li span.count span {
   clear: both;
   overflow: hidden;
 }
+
 .menu-fish p {
   margin: 0;
   font-size: 1.8rem;
 }
+
 .menu-fish .fish-name {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 .menu-fish .price {
   font-size: 1.4rem;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
+
 .menu-fish img {
   float: left;
   width: 150px;
   margin-right: 1rem;
 }
+
 button,
 input[type=submit] {
   text-transform: uppercase;
@@ -599,25 +609,29 @@ input[type=submit] {
   position: relative;
   z-index: 2;
 }
+
 button[disabled],
 input[type=submit][disabled] {
   color: #d12028;
   background: #fff;
   border-color: #d12028;
   -webkit-transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
-          transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
+  transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
 }
+
 button[disabled]:hover,
 input[type=submit][disabled]:hover {
   color: #d12028;
   cursor: not-allowed;
 }
-button[disabled]:after,
-input[type=submit][disabled]:after {
+
+button[disabled]::after,
+input[type=submit][disabled]::after {
   display: none;
 }
-button:after,
-input[type=submit]:after {
+
+button::after,
+input[type=submit]::after {
   content: '';
   z-index: -1;
   display: block;
@@ -630,6 +644,7 @@ input[type=submit]:after {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+
 button:hover,
 input[type=submit]:hover,
 button:focus,
@@ -637,20 +652,24 @@ input[type=submit]:focus {
   color: #fff;
   outline: 0;
 }
-button:hover:after,
-input[type=submit]:hover:after,
-button:focus:after,
-input[type=submit]:focus:after {
+
+button:hover::after,
+input[type=submit]:hover::after,
+button:focus::after,
+input[type=submit]:focus::after {
   height: 100%;
 }
-button.warning:after,
-input[type=submit].warning:after {
+
+button.warning::after,
+input[type=submit].warning::after {
   background: #d12028;
 }
-button.success:after,
-input[type=submit].success:after {
+
+button.success::after,
+input[type=submit].success::after {
   background: #2dc22d;
 }
+
 button.github,
 input[type=submit].github,
 button.facebook,
@@ -664,30 +683,37 @@ input[type=submit].twitter {
   color: #fff;
   padding: 2rem;
 }
+
 button.github,
 input[type=submit].github {
   background: #82d465;
 }
-button.github:after,
-input[type=submit].github:after {
+
+button.github::after,
+input[type=submit].github::after {
   background: #5cc437;
 }
+
 button.facebook,
 input[type=submit].facebook {
   background: #3864a3;
 }
-button.facebook:after,
-input[type=submit].facebook:after {
+
+button.facebook::after,
+input[type=submit].facebook::after {
   background: #2d5082;
 }
+
 button.twitter,
 input[type=submit].twitter {
   background: #5ea9dd;
 }
-button.twitter:after,
-input[type=submit].twitter:after {
+
+button.twitter::after,
+input[type=submit].twitter::after {
   background: #2c8dd0;
 }
+
 .store-selector {
   background: #fff;
   max-width: 500px;
@@ -695,10 +721,12 @@ input[type=submit].twitter:after {
   padding: 2rem;
   border: 2px solid #000;
 }
+
 .store-selector input,
 .store-selector button {
   width: 100%;
 }
+
 .store-selector input[type="text"],
 .store-selector button[type="text"] {
   text-align: center;
